@@ -5,32 +5,24 @@
   <link rel="icon" type="image/svg+xml" href="graphics/CTLogo.svg">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    section {
-      display: none;
-    }
-    section.active {
-      display: block;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <a href="javascript:showSection('home')">
+    <a href="#home">
       <img src="graphics/CTLogo.svg" alt="Space Shipping Company Logo">
     </a>
     <nav>
       <ul>
-        <li><a href="javascript:showSection('home')">Home</a></li>
-        <li><a href="javascript:showSection('pricing')">Pricing</a></li>
-        <li><a href="javascript:showSection('team')">Team</a></li>
-        <li><a href="javascript:showSection('history')">History</a></li>
-        <li><a href="javascript:showSection('contact')">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section id="home" class="active">
+    <section id="home">
       <img src="graphics/earthrise.jpg" alt="A big image of a spaceship">
     </section>
     <section id="pricing">
@@ -105,13 +97,5 @@
   <footer>
     <p>Copyright 116 T.E., Cress and Thorn Cargo. </p>
   </footer>
-  <script>
-    function showSection(sectionId) {
-      document.querySelectorAll('section').forEach(section => {
-        section.classList.remove('active');
-      });
-      document.getElementById(sectionId).classList.add('active');
-    }
-  </script>
 </body>
 </html>
