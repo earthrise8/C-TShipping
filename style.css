@@ -77,6 +77,19 @@ section {
   object-fit: cover;
 }
 
+#services .services-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+#services .service-item {
+  width: 50%;
+}
+
+#services .service-item img {
+  width: 100%;
+}
+
 #rampsion img {
   width: 100%;
 }
