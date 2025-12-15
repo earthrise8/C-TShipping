@@ -62,7 +62,7 @@ section {
 
 #home .hero-title {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -83,7 +83,7 @@ section {
 }
 
 #services .service-item {
-  width: 50%;
+  width: 70%;
 }
 
 #services .service-item img {
