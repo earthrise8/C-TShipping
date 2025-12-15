@@ -56,6 +56,21 @@ section {
   padding-top: 0;
 }
 
+#home .hero-container {
+  position: relative;
+}
+
+#home .hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 #home img {
   width: 100%;
   height: calc(100vh - 164px);
