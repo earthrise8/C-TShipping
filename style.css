@@ -1,0 +1,135 @@
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Space Mono', sans-serif;
+  margin: 0;
+  padding: 0 1.25rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+
+header img {
+  height: 2.5rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin-left: 1.25rem;
+}
+
+header nav ul li a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+main {
+  padding: 1.25rem 0;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+#home img {
+  width: 100%;
+  height: calc(100vh - 120px);
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.bordered {
+  border: 1px solid black;
+  padding: 1.25rem;
+}
+
+#team .grid > div {
+  text-align: center;
+}
+
+#team img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 9999px;
+  margin: 0 auto 0.75rem;
+}
+
+#team h2 {
+  font-size: 1.25rem;
+}
+
+#contact form div {
+  margin-bottom: 1.25rem;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #e5e7eb;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+#contact button {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  text-align: center;
+  padding: 1.25rem 0;
+}

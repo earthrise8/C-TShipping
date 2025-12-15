@@ -3,19 +3,8 @@
 <head>
   <title>Space Shipping Company</title>
   <link rel="icon" type="image/svg+xml" href="graphics/CTLogo.svg">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'sans': ['Space Mono', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="style.css">
   <style>
     section {
       display: none;
@@ -25,89 +14,89 @@
     }
   </style>
 </head>
-<body class="bg-white text-black font-sans px-5">
-  <header class="flex justify-between items-center py-5">
+<body>
+  <header>
     <a href="javascript:showSection('home')">
-      <img src="graphics/CTLogo.svg" alt="Space Shipping Company Logo" class="h-10">
+      <img src="graphics/CTLogo.svg" alt="Space Shipping Company Logo">
     </a>
     <nav>
-      <ul class="flex">
-        <li class="ml-5"><a href="javascript:showSection('home')" class="text-blue-500">Home</a></li>
-        <li class="ml-5"><a href="javascript:showSection('pricing')" class="text-blue-500">Pricing</a></li>
-        <li class="ml-5"><a href="javascript:showSection('team')" class="text-blue-500">Team</a></li>
-        <li class="ml-5"><a href="javascript:showSection('history')" class="text-blue-500">History</a></li>
-        <li class="ml-5"><a href="javascript:showSection('contact')" class="text-blue-500">Contact</a></li>
+      <ul>
+        <li><a href="javascript:showSection('home')">Home</a></li>
+        <li><a href="javascript:showSection('pricing')">Pricing</a></li>
+        <li><a href="javascript:showSection('team')">Team</a></li>
+        <li><a href="javascript:showSection('history')">History</a></li>
+        <li><a href="javascript:showSection('contact')">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main class="py-5">
+  <main>
     <section id="home" class="active">
-      <img src="graphics/earthrise.jpg" alt="A big image of a spaceship" class="w-full">
+      <img src="graphics/earthrise.jpg" alt="A big image of a spaceship">
     </section>
     <section id="pricing">
-      <h1 class="text-3xl font-bold mb-5">Pricing</h1>
-      <div class="grid grid-cols-3 gap-5">
-        <div class="border border-black p-5">
-          <h2 class="text-2xl font-bold mb-3">Basic</h2>
-          <p class="text-4xl font-bold mb-3">$1M</p>
+      <h1>Pricing</h1>
+      <div class="grid">
+        <div class="bordered">
+          <h2>Basic</h2>
+          <p class="price">$1M</p>
           <p>Ship up to 1 ton of cargo to low Earth orbit.</p>
         </div>
-        <div class="border border-black p-5">
-          <h2 class="text-2xl font-bold mb-3">Standard</h2>
-          <p class="text-4xl font-bold mb-3">$5M</p>
+        <div class="bordered">
+          <h2>Standard</h2>
+          <p class="price">$5M</p>
           <p>Ship up to 5 tons of cargo to the Moon.</p>
         </div>
-        <div class="border border-black p-5">
-          <h2 class="text-2xl font-bold mb-3">Premium</h2>
-          <p class="text-4xl font-bold mb-3">$20M</p>
+        <div class="bordered">
+          <h2>Premium</h2>
+          <p class="price">$20M</p>
           <p>Ship up to 10 tons of cargo to Mars.</p>
         </div>
       </div>
     </section>
     <section id="team">
-      <h1 class="text-3xl font-bold mb-5">Our Team</h1>
-      <div class="grid grid-cols-3 gap-5">
-        <div class="text-center">
-          <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/j2m-shareable.jpg" alt="Team member" class="w-48 h-48 rounded-full mx-auto mb-3">
-          <h2 class="text-xl font-bold">John Doe</h2>
+      <h1>Our Team</h1>
+      <div class="grid">
+        <div>
+          <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/j2m-shareable.jpg" alt="Team member">
+          <h2>John Doe</h2>
           <p>CEO</p>
         </div>
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80" alt="Team member" class="w-48 h-48 rounded-full mx-auto mb-3">
-          <h2 class="text-xl font-bold">Jane Smith</h2>
+        <div>
+          <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80" alt="Team member">
+          <h2>Jane Smith</h2>
           <p>CTO</p>
         </div>
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Team member" class="w-48 h-48 rounded-full mx-auto mb-3">
-          <h2 class="text-xl font-bold">Peter Jones</h2>
+        <div>
+          <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Team member">
+          <h2>Peter Jones</h2>
           <p>COO</p>
         </div>
       </div>
     </section>
     <section id="history">
-      <h1 class="text-3xl font-bold mb-5">Our History</h1>
+      <h1>Our History</h1>
       <p>We were founded in 2023 with the goal of making space travel accessible to everyone. We have since launched over 100 successful missions and are planning to expand our services to include interstellar travel in the near future.</p>
     </section>
     <section id="contact">
-      <h1 class="text-3xl font-bold mb-5">Contact Us</h1>
+      <h1>Contact Us</h1>
       <form>
-        <div class="mb-5">
-          <label for="name" class="block mb-2">Name</label>
-          <input type="text" id="name" name="name" class="w-full p-2 bg-gray-200 border border-gray-300 rounded">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
         </div>
-        <div class="mb-5">
-          <label for="email" class="block mb-2">Email</label>
-          <input type="email" id="email" name="email" class="w-full p-2 bg-gray-200 border border-gray-300 rounded">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
         </div>
-        <div class="mb-5">
-          <label for="message" class="block mb-2">Message</label>
-          <textarea id="message" name="message" rows="5" class="w-full p-2 bg-gray-200 border border-gray-300 rounded"></textarea>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
         </div>
-        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send</button>
+        <button type="submit">Send</button>
       </form>
     </section>
   </main>
-  <footer class="text-center py-5">
+  <footer>
     <p>Copyright 2023, Space Shipping Company</p>
   </footer>
   <script>
