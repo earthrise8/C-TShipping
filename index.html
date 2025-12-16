@@ -105,7 +105,7 @@
         <div class="bordered pricing-item">
           <img class="icon" src="graphics/3.svg" alt="Icon">
           <h2>African Union → Luna</h2>
-          <p class="price">$20,000 univs per kg</p>
+          <p class="price">$20,000 univs per kg</p>g">
         </div>
 
         <div class="bordered pricing-item">
@@ -143,7 +143,7 @@
         </div>
 
         <div>
-          <img src="graphics/Cress.png" alt="Crescent Darnell">
+          <img src="graphics/Cress.png" alt="Crescent Darnell" id="cress-icon">
           <h2>Crescent Darnell</h2>
           <p>
             Raised on a satellite in low Earth orbit, Cress is a Lunar shell and an expert in navigation
@@ -180,5 +180,15 @@
   <footer>
     <p>Copyright 116 T.E., Cress and Thorne Cargo.</p>
   </footer>
+
+  <script>
+    const cressIcon = document.getElementById('cress-icon');
+    cressIcon.addEventListener('click', () => {
+      const password = prompt('Enter password:');
+      if (password === 'wirecutters') {
+        window.location.href = 'https://9000-firebase-battle-of-artemesia-1765852484085.cluster-gbjk7stgxjadcxgklzxmgbb56i.cloudworkstations.dev/?monospaceUid=659221';
+      }
+    });
+  </script>
 </body>
 </html>
